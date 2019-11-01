@@ -4,7 +4,11 @@ const Images = (props) =>{
         <div> 
          {
         props.clickyimages.map(image=>{
-            return (<div>{image}</div>)
+        const imagepath = require( '../public/assets/images/' + image);
+            return (<div>
+                <img src={imagepath} style={{height: "200px", padding:"20px", cursor:"pointer"}} alt={imagepath}>
+
+            </img> </div>)
         })   
          }   
         </div>
