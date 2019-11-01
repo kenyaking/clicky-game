@@ -5,10 +5,10 @@ const Images = (props) =>{
          {
         props.clickyimages.map(image=>{
         const imagepath = require( '../public/assets/images/' + image.toString() + ".jpg");
-            return (<div>
-                <img onClick ={props.handleImageClick} src={imagepath} style={{height: "200px", padding:"20px", cursor:"pointer"}} alt={imagepath}>
+            return (<span>
+                <img onClick ={()=>props.handleImageClick(image)} src={imagepath} style={{height: "150px", padding:"20px", cursor:"pointer"}} alt={imagepath}>
 
-            </img> </div>)
+            </img> </span>)
         })   
          }   
         </div>
