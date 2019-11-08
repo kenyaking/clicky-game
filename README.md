@@ -1,1 +1,1 @@
-# clicky-game
+# clicky-game .
